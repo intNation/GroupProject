@@ -6,7 +6,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
       <!-- catagory section start -->
-      <div class="catagary_section layout_padding">
+    <section >
+         <div class="catagary_section layout_padding" runat="server">
          <div class="container">
             <div class="catagary_main">
                <div class="catagary_right">
@@ -69,8 +70,11 @@
       </div>
       <!-- category section end -->
 
+    </section>
+     
 
-      <!-- computers section start -->
+    <section>
+         <!-- computers section start -->
       <div class="computers_section layout_padding">
          <div class="container">
             <h1 class="computers_taital">Computers & Laptop</h1>
@@ -115,5 +119,7 @@
          </div>
       </div>
       <!-- computers section end -->
+    </section>
+     
       
 </asp:Content>

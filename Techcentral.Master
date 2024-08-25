@@ -46,7 +46,8 @@
       
       
 <!-- header section start -->
-      <div class="header_section haeder_main">
+        <!--non logged in view start-->
+        <div class="header_section haeder_main">
          <div class="container-fluid">
             <nav class="navbar navbar-light bg-light justify-content-between">
                <div id="mySidenav" class="sidenav">
@@ -60,17 +61,104 @@
                <form class="form-inline ">
                   <div class="login_text">
                      <ul>
-                        <li><a href="#"><img src="images/user-icon.png"></a></li>
-                        <li><a href="#"><img src="images/trolly-icon.png"></a></li>
-                        <li><a href="#"><img src="images/search-icon.png"></a></li>
+                         <li>
+                            <a href="#"><img src="images/search-icon.png"></a>
+                        </li>
+                        <li>
+                          <a href="#"> <img src="images/trolly-icon.png">  </a> 
+                        </li>
+                        <li>
+                            <button id="btnLoginSignup" style=" background-color: #143A51; font-family: 'Yu Gothic UI';  color: #FFFFFF; border-radius:15px; padding:3px 6px;">Login/Signup</button>
+                        </li>    
                      </ul>
                   </div>
                </form>
             </nav>
          </div>
       </div>
-      <!-- header section end -->        
+         <!--non logged in view end-->
 
+
+         <!-- customer logged in view  start-->
+        <div class="header_section haeder_main" hidden="hidden">
+         <div class="container-fluid">
+            <nav class="navbar navbar-light bg-light justify-content-between">
+               <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href=" Home.aspx">Home</a>
+                  <a href="Computers.aspx">Computers</a>
+                  <a href="Contact.aspx">Contact</a>
+               </div>
+               <span style="font-size:30px;cursor:pointer; color: #fff;" onclick="openNav()"><img src="images/toggle-icon.png"></span>
+               <a class="navbar-brand" href="Home.aspx"> <span id="tech">TECH</span><span id="central">CENTRAL.com</span></a>
+               <form class="form-inline ">
+                  <div class="login_text">
+                     <ul>
+                        <li>
+                            <a href="#"><img src="images/search-icon.png"></a>
+                        </li>
+                        <li>
+                          <a href="#"> <img src="images/trolly-icon.png">  </a> 
+                        </li>
+
+                          <li>  
+                              <a><img src="images/user-icon.png"></a>
+                          </li>
+
+                        <li>
+                             <button id="btnLogout" style=" background-color: #143A51; font-family: 'Yu Gothic UI';  color: #FFFFFF; border-radius:15px; padding:3px 6px;">Logout</button>
+                        </li>
+                        
+                     </ul>
+                  </div>
+               </form>
+            </nav>
+         </div>
+      </div>
+         <!-- customer logged in view end-->
+
+      <!-- manager logged in view  start-->
+        <div class="header_section haeder_main" hidden="hidden">
+         <div class="container-fluid">
+            <nav class="navbar navbar-light bg-light justify-content-between">
+               <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href=" Home.aspx">Home</a>
+                  <a href="Computers.aspx">Computers</a>
+                  <a href="Contact.aspx">Contact</a>
+               </div>
+               <span style="font-size:30px;cursor:pointer; color: #fff;" onclick="openNav()"><img src="images/toggle-icon.png"></span>
+               <a class="navbar-brand" href="Home.aspx"> <span id="tech">TECH</span><span id="central">CENTRAL.com</span></a>
+               <form class="form-inline " runat="server">
+                  <div class="login_text">
+                     <ul>
+                        <li>
+                            <a href="#"><img src="images/search-icon.png"></a>
+                        </li>
+                        <li>
+                            <asp:LinkButton ID="lnkProdManagement" runat="server" BorderColor="#143A51" BorderStyle="Solid" BorderWidth="2px" ForeColor="#143A51">Product Management</asp:LinkButton>
+                        </li>
+                         <li>
+                            <asp:LinkButton ID="lnkReports" runat="server" BorderColor="#143A51" BorderStyle="Solid" BorderWidth="2px" ForeColor="#143A51">Reports</asp:LinkButton>
+                        </li>
+
+                          <li>  
+                              <a><img src="images/user-icon.png"></a>
+                          </li>
+
+                        <li>
+                             <button id="btnLogout" style="background-color: #143A51; font-family: 'Yu Gothic UI';  color: #FFFFFF; border-radius:15px; padding:3px 6px;">Logout</button>
+                        </li>
+                        
+                     </ul>
+                  </div>
+               </form>
+            </nav>
+         </div>
+      </div>
+         <!-- manager logged in view end-->
+      
+      <!-- header section end -->        
 
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
@@ -122,7 +210,7 @@
         <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved</a></p>
+            <p class="copyright_text">2020 All Rights Reserved</p>
          </div>
 
           <div class="footer_logo_main">
