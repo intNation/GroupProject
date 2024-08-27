@@ -65,10 +65,10 @@
                             <a href="#"><img src="images/search-icon.png"></a>
                         </li>
                         <li>
-                          <a href="#"> <img src="images/trolly-icon.png">  </a> 
+                          <a href="Cart.aspx"> <img src="images/trolly-icon.png">  </a> 
                         </li>
                         <li>
-                            <button id="btnLoginSignup" style=" background-color: #143A51; font-family: 'Yu Gothic UI';  color: #FFFFFF; border-radius:15px; padding:3px 6px;">Login/Signup</button>
+                           <a href="Cart.aspx"><button id="btnLoginSignup" style=" background-color: #143A51; font-family: 'Yu Gothic UI';  color: #FFFFFF; border-radius:15px; padding:3px 6px;">Login/Signup</button></a> 
                         </li>    
                      </ul>
                   </div>
